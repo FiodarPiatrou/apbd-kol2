@@ -3,13 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Kol2.Data;
 
-public class DbContext: Microsoft.EntityFrameworkCore.DbContext
+public class MyDbContext: Microsoft.EntityFrameworkCore.DbContext
 {
-    protected DbContext()
+    protected MyDbContext()
     {
     }
 
-    public DbContext(DbContextOptions options) : base(options)
+    public MyDbContext(DbContextOptions options) : base(options)
     {
         
     }

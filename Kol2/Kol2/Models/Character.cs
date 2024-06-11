@@ -10,5 +10,7 @@ public class Character
     [MaxLength(120)] public string LastName { get; set; } = string.Empty;
     public int CurrentWeight { get; set; }
     public int MaxWeight { get; set; }
+    public ICollection<Backpack> Backpacks { get; set; }
+    public ICollection<CharacterTitle> CharacterTitles { get; set; }
     
 }
