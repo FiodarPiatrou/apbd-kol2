@@ -54,4 +54,11 @@ public class CharactersController: ControllerBase
             Titles = titles
         });
     }
+
+    [HttpPost("{characterId}/backpacks")]
+    public async Task<IActionResult> AddNewItemsForCharacter()
+    {
+
+        return Created();
+    }
 }
